@@ -6,12 +6,14 @@
     */
 
     //ENTRADA
-    const caractere = prompt(`Informe um caractere:`).toLowerCase;
+    const caractere = prompt(`Informe um caractere:`).toUpperCase();
 
     //PROCESSAMENTO
-    (caractere == "a" || caractere == "e" || caractere == "i" || caractere == "o" || caractere == "u") ? document.write(`O seu caractere é uma Vogal!!!`) : document.write(`O seu caractere não é uma vogal`);
+    let vogal = "";
+    (caractere == "A" || caractere == "E" || caractere == "I" || caractere == "O" || caractere == "u") ? vogal = "é um vogal" : vogal = "não é uma vogal";
 
     
     //SAÍDA
+    document.write(`O caractere ${vogal}`)
 
 </script>

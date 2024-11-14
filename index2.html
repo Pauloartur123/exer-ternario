@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA: ELEITOR
+    Considerando que no Brasil é possível votar a partir dos 16 anos de idade, leia o ano de nascimento de uma pessoa e informe se ela poderá votar no ano atual. Ignore mês e dia de nascimento.
+    */
+
+    //ENTRADA
+    const dia = Number(prompt(`Em que dia vocẽ nasceu?`));
+    const mes = Number(prompt(`Em que mes vocẽ nasceu?`));
+    const ano = Number(prompt(`Em que ano vocẽ nasceu?`));
+
+    //PROCESSAMENTO
+    let idade = 2024 - ano;
+    (idade >= 16) ? document.write(`Você pode votar!!!`) : document.write(`Você não pode votar!!!`);
+    
+    //SAÍDA
+
+</script>
